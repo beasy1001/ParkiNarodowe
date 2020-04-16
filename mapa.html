@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TATRZANSKI PARK NARODOWY</title>
+    <title>MAPA PARKÓW NARODOWYCH</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext" rel="stylesheet">
     <script src="https://kit.fontawesome.com/37ed8ac084.js" crossorigin="anonymous"></script>
-    <style>
-        .clearfix::after {
+<style>
+    *{
+        background-color: rgb(231, 231, 231);
+    }
+    .clearfix::after {
             content: "";
             display: block;
             clear: both;
@@ -67,8 +70,23 @@
             transition: 0.3s transform linear;
         }
 
+    .turu {
 
-    </style>
+        display: flex;
+           justify-content: center;
+
+    }
+    footer {
+           position: absolute;
+           bottom: 0;
+        }
+        .benc {
+           font-size: 35px;
+            display: flex;
+           justify-content: center;
+           margin-top: 5%;
+        }
+</style>
 </head>
 <body>
     <nav>
@@ -79,21 +97,13 @@
               
                 
         </ul>
-
-
-
-
+        </nav>
     <div class ="turu">
-        <img src="images/tatr.png" alt="Logo Tatrzanskiego Parku Narodowego">
+        <img src="images/mapa.png" alt="Logo Tatrzanskiego Parku Narodowego">
     </div>
-    <section>
-      <p>Tatrzański Park Narodowy (TPN) – jeden z 23 parków narodowych na terenie Polski. Utworzony z dniem 1 stycznia 1955 roku przez rozporządzenie Rady Ministrów z 30 października 1954 r. 
-          Jego odpowiednikiem po stronie słowackiej jest TANAP.  </p>
-
-
-
-    </section>
-    
+    <div class = "benc">
+        Położenie Polskich Parków Narodowych
+    </div>
     <footer>
         <div>©2020 by JŚ </div>
         
