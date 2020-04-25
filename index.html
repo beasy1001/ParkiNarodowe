@@ -110,7 +110,19 @@
         .ikonki {
             justify-content: center;
         }
+    .zmiana:after {
+            font-size: 40px;
+            display: flex;
+           justify-content: center;
+           margin-top: 100px;
+           z-index: 1;
+           position: relative;
+              content:'Wybierz park';
+        }
+      .essa:hover {
+          zmiana.textContent="Tatrzanski";
 
+      }
 
         
 
@@ -123,12 +135,14 @@
 
 <body>
     
-    <div class = "header">Polskie Parki Narodowe </div>
+    <div class = "header">Polskie Parki Narodowe </div> <br>
+    <div class = "zmiana"></div>
     <nav>
+        
 <div class = "ikonki">
         <ul class="clearfix">
             
-                <li><a href="tatrzanski.html"><img src="images/tatrzanskilogo.png" alt=""height="100" width="100"></a></li>
+                <li class = "essa"><a href="tatrzanski.html"><img src="images/tatrzanskilogo.png" alt=""height="100" width="100"></a></li>
                 <li><a href="białowieski.html"><img src="images/białowieskilogo.png" alt=""height="100" width="100"></a></li>
                 <li><a href="wigierski.html"><img src="images/wigierskilogo.png" alt=""height="100" width="100"></a></li>
                 <li><a href="pieninski.html"><img src="images/pieninskilogo.png" alt=""height="100" width="100"></a></li>
@@ -155,7 +169,20 @@
         
         <div style="position: absolute; bottom: 0px;">©2020 by JŚ </div>
     
+<script>
+const div = document.querySelector('.zmiana');
+function zmianaNapisu(){
 
+    div.classList.toggle("zmiana");
+}
+
+div.addEventListener('dblclick', zmianaNapisu);
+    </script>
+
+
+
+
+ </script>
     
         
 </body>
